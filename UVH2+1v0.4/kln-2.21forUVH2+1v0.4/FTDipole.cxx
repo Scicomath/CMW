@@ -1,5 +1,6 @@
 #include "FTDipole.h" 
 #include <iostream>
+#include <cstdlib>
 #include <iomanip>
 
 //Parameters:       
@@ -220,7 +221,7 @@ C       =========================================================
 C       Purpose: This program computes the Bessel functions  
 C                Jn(x) and Yn(x) ( n=0,1 ) and their derivatives 
 C                using subroutine JY01A
-C       Input :  x   --- Argument of Jn(x) & Yn(x) ( x Є 0 )
+C       Input :  x   --- Argument of Jn(x) & Yn(x) ( x рез 0 )
 C       Output:  BJ0 --- J0(x)
 C                DJ0 --- J0'(x)
 C                BJ1 --- J1(x)
@@ -279,7 +280,7 @@ double FTDipole::BesselJ0(double x)
 //       =======================================================
 //       Purpose: Compute Bessel functions J0(x), J1(x), Y0(x),
 //                Y1(x), and their derivatives
-//       Input :  x   --- Argument of Jn(x) & Yn(x) ( x Є 0 )
+//       Input :  x   --- Argument of Jn(x) & Yn(x) ( x рез 0 )
 //       Output:  BJ0 --- J0(x)
 //                DJ0 --- J0'(x)
 //                BJ1 --- J1(x)

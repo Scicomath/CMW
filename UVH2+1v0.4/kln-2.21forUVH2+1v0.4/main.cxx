@@ -4,6 +4,7 @@
 #include <iomanip> 
 #include <cstdlib>
 #include <string>
+#include <cstring>
 #include <algorithm>
 #include <fstream>
 #include "FTDipole.h"
