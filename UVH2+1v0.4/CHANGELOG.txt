@@ -1,0 +1,40 @@
+New in version 0.4:
+* Introduced freezeout routines (convertfull, preresofull, resofull, 
+extractfull) which integrate over the entire transverse plane,
+appropriate for arbitrary asymmetric initial conditions. 
+* Added option for deformed (but still smooth) initial conditions
+to study arbitrary v_n (see FREEZE = -6,-7 or -27 in source and 
+arXiv:1007.5469 for explanation)
+to compilre properly
+
+
+New in version 0.3:
+* New (optional) blockwise freeze out routine that does not require
+monotonically decreasing temperature from the center.
+* prereso.cpp to extract spectra before resonance feed down
+* ability to choose different forms for the viscous correction
+to the freeze out distribution function besides the standard
+form quadratic in momentum (see FREEZE parameter in data/params.txt)
+* convertfull routine that calculates spectra over all azimuthal
+angles, rather than just one quadrant, for unsymmetric initial
+conditions (NOT TESTED!)
+
+
+
+New in v0.2:
+
+* Bug fixed in calculation of resonances (convert.cpp module)
+* Allows for non-vanishing lambda_{1,2} coefficients in the hydro equations
+* Allows use of both CGC and Glauber initial conditions (kln module)
+* Initial conditions for both RHIC and LHC implemented (initE.cpp module)
+* Allows to shut off freeze-out surface finder (isochronous freezeout, see params.txt)
+
+June 21, 2009 (still v0.2):
+*changed qcdIEOS.dat file so that values are monotonous
+*updated README to give more explanation on physical units
+....thanks to Rajeev Bhalerao for pointing out these problems....
+
+July 8, 2009 (still v0.2):
+* introduced LCOEF2 in convertnew.cpp so that it would compile
+* fixed bug in UVH2+1.cpp and initE.cpp about low-temperature EOS cutoff
+  (lowestE); should run now for higher cutoff temperatures EOS than before

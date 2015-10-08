@@ -1,0 +1,57 @@
+//initial conditions 
+IC		-2
+
+// number of lattice sites
+NUMT		109
+
+//impact parameter 
+B		0.0
+
+// spatial lattice spacing in GeV^-1 
+AT		2.0
+
+// temporal lattice spacing 
+EPS		0.001
+
+//initial starting time in fm over c 
+TINIT		 1.0
+
+//initial starting temperature in GeVr 
+TSTART		0.333
+
+// maximum # of steps to take 
+STEPS		40000
+
+// how many steps before recording measurables 
+UPDATE		250
+
+// how many steps before dumping all variables to file; "taking a snapshot" 
+SNAPUPDATE	250
+
+//viscosity over entropy 
+ETAOS		0.08
+
+//freeze-out temperature 
+TF		0.14
+
+//dimensionless value of relaxation time 
+COEFF		2.0
+
+
+//lambda 1 coefficient -- 2 for N=4 SYM 
+L1COEF		0.0
+
+//coefficient -lambda2/(eta/tau_pi) -- 2 for weakly coupled plasma 
+L2COEF		0.0
+
+//freeze-out at T=TF -- 0 for isochronous, 1 for isothermal, 2 for blockwise isothermal 
+FREEZE		2
+
+//PT Array size 
+PTASIZE		100
+
+//PHI Arry size 
+PHIPASIZE	12
+
+//Max pt to calculate spectra 
+PTMAX   4.5

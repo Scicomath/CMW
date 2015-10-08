@@ -1,0 +1,8 @@
+pasin.dat        **output-file_from_spectra.f
+data/phipspectra.dat    **spectra-file
+data/ptarr.dat          **ptarray-file
+data/results	                   **output
+211                       **Monte-Carlo-number-of-lightest-particleto-calculate 
+   
+
+
